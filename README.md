@@ -4,12 +4,6 @@
 for Underwater Dam Crack Segmentationn</h3>
 </div>
 
-## Overview
-
-
-### Abstract
-
-The accurate detection of underwater concrete dam cracks is essential for structural health monitoring. Accurately segmenting these cracks from the background is a crucial step in quantifying and assessing the extent of dam structural deterioration. However, underwater images often exhibit low contrast and limited resolution, which contribute to severe issues such as low detection accuracy and high false positive rates in existing methods. To overcome these issues, we propose CADFA-Net, an innovative underwater dam crack segmentation method. The proposed method significantly improves the detection performance of underwater dam cracks through the following innovations. We propose a Collaborative Attention State Space (CASS) block to enable multi-scale feature extraction. It boosts the detection accuracy of fine-grained cracks and maintains the continuity of blurred edge structures. We design a Multimanner Zigzag scanning (MZS) module to extract crack features from multiple orientations. It ensures semantic continuity and enhances the representation of crack topological structures. Finally, a dual-domain feature aggregation module (DDFAM) integrates spatial and frequency domain information. This module effectively separates high-frequency edge details from low-frequency global structures. Adaptive Global Feature Selection (AGFS) is then applied for cross-domain feature fusion, suppressing noise and enhancing crack feature saliency. Experimental results indicate that CADFANet achieves state-of-the-art performance on both underwater and pavement crack datasets, with IoU scores of 75.74% and 70.64%, respectively. The proposed method enhances crack detection accuracy, minimizes false positives from background interference, and demonstrates superior segmentation continuity and robustness.
 
 </details>
 
@@ -24,8 +18,9 @@ https://github.com/shblyy/CADFA-Net.git
 ```
 
 #### 2. Environment setup:
-
-We tested our code on `torch==1.13.1` and `torch==2.0.2`.
+conda create -n CADFA python=3.10
+pip install torch==2.2 torchvision torchaudio triton pytest chardet yacs termcolor fvcore seaborn packaging ninja einops numpy==1.24.4 timm==0.4.12
+pip install https://github.com/state-spaces/mamba/releases/download/v2.2.4/mamba_ssm-2.2.4+cu12torch2.2cxx11abiTRUE-cp310-cp310-linux_x86_64.whl
 
 _**Install Mamba kernels:**_
 ```shell
@@ -61,3 +56,8 @@ classification
 │   │   ├── cifar-10-batches-py
 │   │   ├── cifar-100-python
 ```
+
+## Acknowledgment
+
+This project is based on VMamba, Mamba ([paper](https://arxiv.org/abs/2312.00752), [code](https://github.com/state-spaces/mamba)), Swin-Transformer ([paper](https://arxiv.org/pdf/2103.14030.pdf), [code](https://github.com/microsoft/Swin-Transformer)), ConvNeXt ([paper](https://arxiv.org/abs/2201.03545), [code](https://github.com/facebookresearch/ConvNeXt)), [OpenMMLab](https://github.com/open-mmlab),
+and the `analyze/get_erf.py` is adopted from [replknet](https://github.com/DingXiaoH/RepLKNet-pytorch/tree/main/erf), thanks for their excellent works.
