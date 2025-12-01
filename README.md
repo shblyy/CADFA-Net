@@ -5,13 +5,14 @@ for Underwater Dam Crack Segmentationn</h3>
 </div>
 
 ## Overview
-<details>
+
 
 ### Abstract
 
 The accurate detection of underwater concrete dam cracks is essential for structural health monitoring. Accurately segmenting these cracks from the background is a crucial step in quantifying and assessing the extent of dam structural deterioration. However, underwater images often exhibit low contrast and limited resolution, which contribute to severe issues such as low detection accuracy and high false positive rates in existing methods. To overcome these issues, we propose CADFA-Net, an innovative underwater dam crack segmentation method. The proposed method significantly improves the detection performance of underwater dam cracks through the following innovations. We propose a Collaborative Attention State Space (CASS) block to enable multi-scale feature extraction. It boosts the detection accuracy of fine-grained cracks and maintains the continuity of blurred edge structures. We design a Multimanner Zigzag scanning (MZS) module to extract crack features from multiple orientations. It ensures semantic continuity and enhances the representation of crack topological structures. Finally, a dual-domain feature aggregation module (DDFAM) integrates spatial and frequency domain information. This module effectively separates high-frequency edge details from low-frequency global structures. Adaptive Global Feature Selection (AGFS) is then applied for cross-domain feature fusion, suppressing noise and enhancing crack feature saliency. Experimental results indicate that CADFANet achieves state-of-the-art performance on both underwater and pavement crack datasets, with IoU scores of 75.74% and 70.64%, respectively. The proposed method enhances crack detection accuracy, minimizes false positives from background interference, and demonstrates superior segmentation continuity and robustness.
 
 </details>
+
 ## Getting Started
 
 ### Installation
