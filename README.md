@@ -10,7 +10,7 @@ The UDCD dataset contains underwater crack images collected under diverse imagin
 
 ### Example Images
 
-![Dataset Samples](r"Sample Images.png")
+![Dataset Samples](SampleImages.png)
 
 
 </details>
