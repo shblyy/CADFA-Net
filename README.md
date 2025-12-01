@@ -4,6 +4,14 @@
 for Underwater Dam Crack Segmentationn</h3>
 </div>
 
+## Dataset
+
+The UDCD dataset contains underwater crack images collected under diverse imaging conditions, including turbidity variation, uneven illumination, and complex backgrounds.
+
+### Example Images
+
+![Dataset Samples](数据集展示.pdf)
+
 
 </details>
 
