@@ -22,7 +22,7 @@ To provide a more intuitive understanding of the UDCD dataset, we present severa
 
 ### Installation
 
-#### 1. Clone the LocalMamba repository:
+#### 1. Clone the CADFA-Net repository:
 
 ```shell
 https://github.com/shblyy/CADFA-Net.git
